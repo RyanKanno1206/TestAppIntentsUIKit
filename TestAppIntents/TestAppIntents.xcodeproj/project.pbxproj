@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD069AE62D765E5D0057571B /* DynamicUserInputIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD069AE52D765E5D0057571B /* DynamicUserInputIntent.swift */; };
 		CD359E8C2D71259D00F5FD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD359E832D71259D00F5FD03 /* Assets.xcassets */; };
 		CD359E8E2D71259D00F5FD03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD359E862D71259D00F5FD03 /* LaunchScreen.storyboard */; };
 		CD359E902D71259D00F5FD03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD359E822D71259D00F5FD03 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD069AE52D765E5D0057571B /* DynamicUserInputIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUserInputIntent.swift; sourceTree = "<group>"; };
 		CD359E6A2D71210B00F5FD03 /* TestAppIntents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppIntents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD359E822D71259D00F5FD03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD359E832D71259D00F5FD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				CD359E892D71259D00F5FD03 /* MainTabVC.swift */,
 				CDB000262D712CCA00F9ED47 /* OpenTab.swift */,
 				CDB000282D72587000F9ED47 /* OpenTabProvider.swift */,
+				CD069AE52D765E5D0057571B /* DynamicUserInputIntent.swift */,
 			);
 			path = TestAppIntents;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB000292D72587000F9ED47 /* OpenTabProvider.swift in Sources */,
+				CD069AE62D765E5D0057571B /* DynamicUserInputIntent.swift in Sources */,
 				CD359E902D71259D00F5FD03 /* AppDelegate.swift in Sources */,
 				CDB000272D712CCA00F9ED47 /* OpenTab.swift in Sources */,
 				CD359E912D71259D00F5FD03 /* MainTabVC.swift in Sources */,

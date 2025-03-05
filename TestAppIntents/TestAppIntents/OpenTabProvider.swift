@@ -18,7 +18,14 @@ struct OpenTabProvider: AppShortcutsProvider {
                 "Open second tab"
             ],
             shortTitle: "Open second tab",
-            systemImageName: "magnifyingglass")
+            systemImageName: "magnifyingglass"),
+        AppShortcut(
+            intent: DynamicUserInputIntent(),
+            phrases: [
+                "Open and take user input text"
+            ],
+            shortTitle: "Set label text",
+            systemImageName: "a.circle")
     ]
     
 }
