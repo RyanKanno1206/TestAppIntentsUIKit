@@ -20,8 +20,8 @@ class MainTabVC: UITabBarController {
         return vc
     }()
     
-    private(set) lazy var tab1: UIViewController = {
-        let vc = UIViewController()
+    private(set) lazy var tab1: Tab1VC = {
+        let vc = Tab1VC()
         vc.view.backgroundColor = .blue
         return vc
     }()
