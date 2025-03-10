@@ -8,7 +8,7 @@
 import AppIntents
 import Foundation
 
-struct DynamicUserInputIntent: AppIntent, OpenIntent {
+struct DynamicUserInputIntent: AppIntent {
     static let title: LocalizedStringResource = "Get user input"
     static let description = IntentDescription("Get typed user input from outside the app")
     static var parameterSummary: some ParameterSummary {
@@ -16,12 +16,20 @@ struct DynamicUserInputIntent: AppIntent, OpenIntent {
     }
     static let openAppWhenRun = true
     
+    @Dependency private var tabVC: MainTabVC
+    
     @Parameter(title: "User input")
-    var target: LabelTextEntity
+    var userInput: String
+    
+    init() {}
+    
+    init(userInput: String) {
+        self.userInput = userInput
+    }
     
     @MainActor func perform() async throws -> some IntentResult {
-        
-        
+        tabVC.selectedIndex = 0
+        tabVC.tab1.label.text = userInput
         return .result()
     }
 }
