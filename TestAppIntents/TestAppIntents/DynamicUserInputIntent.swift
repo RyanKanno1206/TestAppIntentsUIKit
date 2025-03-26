@@ -12,13 +12,13 @@ struct DynamicUserInputIntent: AppIntent {
     static let title: LocalizedStringResource = "Get user input"
     static let description = IntentDescription("Get typed user input from outside the app")
     static var parameterSummary: some ParameterSummary {
-        return Summary("Set label text to ")
+        Summary("Search P+ for \(\.$userInput)")
     }
     static let openAppWhenRun = true
     
     @Dependency private var tabVC: MainTabVC
     
-    @Parameter(title: "User input")
+    @Parameter(title: "show or movie")
     var userInput: String
     
     init() {}
